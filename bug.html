@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Uncommon HTML Bug</title>
+</head>
+<body>
+  <div id="myDiv">
+    This text is inside a div.
+  </div>
+
+  <script>
+    //Incorrect way to get the element by Id
+    var myDiv = document.getElementById('#myDiv');
+    console.log(myDiv); //This will print null
+  </script>
+</body>
+</html>
